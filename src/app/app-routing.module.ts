@@ -5,7 +5,8 @@ import {Screen2Component} from "./screen2/screen2.component";
 
 const routes: Routes = [
   {path: 'angular/screen1', component: Screen1Component},
-  {path: 'angular/screen2', component: Screen2Component}
+  {path: 'angular/screen2', component: Screen2Component},
+  {path: '**', redirectTo: 'angular/screen1'}
 ];
 
 @NgModule({
